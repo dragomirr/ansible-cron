@@ -1,0 +1,20 @@
+---
+cron_tasks: []
+#  - minute: 1
+#    hour: 1
+#    day: 20          -- day of month
+#    user: user1      -- use this user to run task. Defaults to root.
+#    name: task1      -- name of the task. Mandatory.
+#    job: echo 1      -- task to run. Mandatory.
+#    cron_file: task1 -- creates file under /etc/cron.d directory and store cron task there. If not specified user cronfile will be used.
+#  - minute: 10
+#    hour: 10
+#    weekday: 0       -- weekdays. Sunday is 0 or 7
+#    name: task2
+#    cron_file: task1
+#    job: echo 2
+#    state: absent
+#  - minute: 20
+#    hour: 18
+#    job: echo 3
+#    user: user2

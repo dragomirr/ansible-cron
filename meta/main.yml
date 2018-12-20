@@ -1,0 +1,37 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: cron
+  description: Install cron jobs
+  author: Dragomir Radovanovic
+  company: "Content Insights EAD"
+  license: "license (GPLv3)"
+  platforms:
+    - name: Amazon
+      versions:
+        - all
+    - name: ArchLinux
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - all
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: GenericLinux
+      versions:
+        - all
+    - name: opensuse
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+  min_ansible_version: 2.5
+  galaxy_tags:
+    - cron

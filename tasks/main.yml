@@ -1,0 +1,17 @@
+---
+- name: Create cron tasks
+  cron:
+    name: "{{ item.name }}"
+    minute: "{{ item.minute | default(omit) }}"
+    hour: "{{ item.hour | default(omit) }}"
+    day: "{{ item.day | default(omit) }}"
+    weekday: "{{ item.weekday | default(omit) }}"
+    month: "{{ item.month | default(omit) }}"
+    special_time: "{{ item.special_time | default(omit) }}"
+    user: "{{ item.user | default('root') }}"
+    env: "{{ item.env | default(omit) }}"
+    disabled: "{{ item.disabled | default(omit) }}"
+    job: "{{ item.job | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
+    cron_file: "{{ item.cron_file | default(omit) }}"
+  loop: "{{ cron_tasks }}"
